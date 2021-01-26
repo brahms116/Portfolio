@@ -1,0 +1,18 @@
+index
+    *landingSection-grid
+        image
+        titleSection-flex-vertical
+            landingTitle
+            landingSubtitle
+            landingButton
+    *workSection
+        leftbanner-absolute
+        *PortfolioItem-grid 
+            *ItemMarker
+            *ItemTitle
+            *ItemHeading-flex-vertical
+                *ItemHeadingItem
+                *ItemHeadingItem
+                *ItemHeadingItem
+            *ItemButton
+
