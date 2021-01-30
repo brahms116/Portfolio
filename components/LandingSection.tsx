@@ -2,6 +2,7 @@ import React from "react";
 import colors from "../styles/colors";
 import Button from "./Button";
 import coverImage from "../media/Cover.svg";
+import { Link } from "react-scroll";
 
 export default function LandingSection() {
   return (
@@ -11,16 +12,20 @@ export default function LandingSection() {
         <h1 className="title">DAVID KWONG</h1>
         <h2 className="subtitle">WEB DEV</h2>
         <div className="button_container">
-          <Button label="VIEW MY WORK" onClick={() => {}}></Button>
+          <Link to="portfolio" smooth>
+            <Button label="VIEW MY WORK" onClick={() => {}}></Button>
+          </Link>
         </div>
       </div>
       <style jsx>{`
         .section {
+          box-sizing: border-box;
           background: none;
           justify-items: center;
           display: grid;
-          width: 100vw;
+          max-width: 100vw;
           min-height: 100vh;
+          margin-bottom: ${142 / 16}rem;
           grid-template:
             "." ${78 / 16}rem
             "imageA" auto
@@ -40,7 +45,6 @@ export default function LandingSection() {
           flex-direction: column;
           align-items: center;
           grid-area: title_sectionA;
-          width: ${400 / 16}rem;
         }
 
         .title {

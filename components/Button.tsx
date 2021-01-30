@@ -13,6 +13,7 @@ export default function Button(props: {
       {props.label}
       <style jsx>{`
         .button {
+          grid-area: buttonA;
           box-sizing: border-box;
           padding: 0.8rem ${28 / 16}rem;
           text-align: center;
