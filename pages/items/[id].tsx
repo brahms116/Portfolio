@@ -79,7 +79,7 @@ export default function PortfolioItemDetails(props: { item: IPortfolioItem }) {
         </div>
       )}
       {props.item && (
-        <style jsx>{`
+        <style>{`
           .background: {
             max-width: 100vw;
             box-sizing: border-box;
