@@ -10,7 +10,7 @@ export default function LandingSection() {
       <img src={coverImage} alt="cover_image" className="cover_image" />
       <div className="title_section">
         <h1 className="title">DAVID KWONG</h1>
-        <h2 className="subtitle">WEB DEV</h2>
+        <h2 className="subtitle">WEB DEVELOPER</h2>
         <div className="button_container">
           <Link to="portfolio" smooth>
             <Button label="VIEW MY WORK" onClick={() => {}}></Button>

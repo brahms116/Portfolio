@@ -18,7 +18,13 @@ export default function PortfolioItem(props: {
   return (
     <div className="portfolio_item">
       <PortfolioMarker isFirst={props.isFirst} />
-      <PortfolioTitle title={props.item.title} />
+      <PortfolioTitle
+        title={props.item.title}
+        onClick={() => {
+          appData.setId(props.item.id);
+          router.push("/items/" + props.item.id);
+        }}
+      />
       <PortfolioSubtitle subtitle={props.item.subtitle} />
       <PortofolioHeadingContainer>
         <PortfolioHeading

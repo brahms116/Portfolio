@@ -7,12 +7,10 @@ import backIcon from "../../media/backIcon.svg";
 import PortfolioSubtitle from "../../components/PortfolioSubtitle";
 import PortfolioTitle from "../../components/PortfolioTitle";
 import DbService from "../../DbService";
-import data from "../../data";
 import IPortfolioItem from "../../models/IPortfolioItem";
 import { useRouter } from "next/router";
 
 export default function PortfolioItemDetails(props: { item: IPortfolioItem }) {
-  // console.log(props.item);
   const router = useRouter();
   return (
     <motion.div
@@ -80,11 +78,11 @@ export default function PortfolioItemDetails(props: { item: IPortfolioItem }) {
       )}
       {props.item && (
         <style>{`
-          .background: {
-            max-width: 100vw;
+          .background{
+            width: 100vw;
             box-sizing: border-box;
-            min-height: 100vh;
             background: ${props.item.color.background};
+            min-height: 100vh;
           }
           .page {
             box-sizing: border-box;
@@ -112,6 +110,7 @@ export default function PortfolioItemDetails(props: { item: IPortfolioItem }) {
             cursor: pointer;
           }
           .logo {
+            width:15rem;
             justify-self: center;
             grid-area: logoA;
           }
@@ -128,6 +127,7 @@ export default function PortfolioItemDetails(props: { item: IPortfolioItem }) {
 
           .description {
             font-family: "Montserrat", sans-serif;
+            padding-bottom:3rem;
             grid-area: descriptionA;
             line-height: 200%;
             color: ${props.item.color.text};
