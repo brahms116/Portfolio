@@ -6,6 +6,7 @@ import DbService from "../DbService";
 import IPortfolioItem from "../models/IPortfolioItem";
 import colors from "../styles/colors";
 import { Element, scroller } from "react-scroll";
+import Head from "next/head";
 import { useContext, useEffect } from "react";
 import { dataContext } from "./_app";
 
@@ -16,6 +17,10 @@ export default function Home(props: { items: IPortfolioItem[] }) {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
+      <Head>
+        <title>PORTFOLIO</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div className="page">
         <LandingSection />
         <Element name="portfolio">

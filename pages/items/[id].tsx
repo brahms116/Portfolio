@@ -9,6 +9,7 @@ import PortfolioTitle from "../../components/PortfolioTitle";
 import DbService from "../../DbService";
 import IPortfolioItem from "../../models/IPortfolioItem";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 export default function PortfolioItemDetails(props: { item: IPortfolioItem }) {
   const router = useRouter();
@@ -20,6 +21,13 @@ export default function PortfolioItemDetails(props: { item: IPortfolioItem }) {
     >
       {props.item && (
         <div className="background">
+          <Head>
+            <title>{`PORTFOLIO: ${props.item.title}`}</title>
+            <meta
+              name="viewport"
+              content="initial-scale=1.0, width=device-width"
+            />
+          </Head>
           <div className="page">
             <img
               src={backIcon}
