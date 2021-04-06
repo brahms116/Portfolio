@@ -59,6 +59,29 @@
     }
   },
   {
+    "id": "365b897b-a08d-4736-90b5-7b88de768888",
+    "title": "MEMBLE",
+    "subtitle": "WEB GAME/APP",
+    "link": "https://memble.davidkwong.net",
+    "technologies": ["REACTJS"],
+    "languages": ["JS/TS"],
+    "description": "MEMBLE IS A WEBAPP/GAME THAT WAS CREATED TO ASSIST USERS IN MEMORISING THEIR BIBLE VERSES. THE APP WAS CREATED USING CREATE-REACT-APP AND PULLS BIBLE VERSES FROM https://api.esv.org",
+    "keywords": [],
+    "imgSrc": "memblelogo.svg",
+    "color": {
+      "primary": "#6D9FFF",
+      "text": "#3C3C3C",
+      "background": "#FFFFFF",
+      "textOnPrimary": "#FFFFFF",
+      "button": {
+        "text": "#FFFFFF",
+        "idle": "#6D9FFF",
+        "hover": "#99BCFF",
+        "pressed": "#456AB2"
+      }
+    }
+  },
+  {
     "id": "f6831b96-c4f1-434b-930a-5e9be5d262c2",
     "title": "MOOD TRACKER",
     "subtitle": "FULL STACK WEB APP",
